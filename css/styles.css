@@ -55,6 +55,10 @@ strong {
   text-transform: uppercase;
   letter-spacing: 1px;
   order: -1;
+  margin-top: 0;
+  padding-top: 4px;
+  border-top: 5px solid #f18119;
+  border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
 }
 
 .fine-print {
@@ -68,7 +72,8 @@ Intro section
 
 .introduction {
   background-color: #404040;
-  background-image: url(../images/dark-ribs.jpg);
+  background-image: url(../images/ribs.jpg);
+  background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
   padding: 0 0.5em 2em;
@@ -106,23 +111,36 @@ input,
 .btn-primary {
   width: 100%;
   font-family: inherit;
-  font-size: 1.125rem;
-  padding: 0.25em;
   border-radius: 7px;
+  transform: scale(1);
+  transition: transform 250ms;
 }
 
 input {
   text-align: center;
+  font-size: 1.125rem;
   border: 1px solid #818181;
+  padding: 0.25em;
   margin-bottom: 1em;
 }
 
 .btn-primary {
+  display: inline-block;
   color: #fff;
-  background-color: #f18119;
+  background-image: linear-gradient(to left, #ff713b, #ffa51d);
   border: 0;
+  font-size: 0.625rem;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1px;
+  padding: 1em 1.25em;
+  cursor: pointer;
+}
+
+input:focus,
+.btn-primary:hover,
+.btn-primary:focus {
+  transform: scale(1.1);
 }
 
 /* ***********************
