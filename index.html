@@ -18,7 +18,7 @@
         <p class="top-text">Mouthwateringly delicious</p>
       </div>
 
-      <div class="main-content">
+      <div id="Main-Content" class="main-content">
         <h2>Become a BBQ master!</h2>
         <p>register today</p>
         <p>
@@ -27,15 +27,27 @@
           is to learn from the best. You can do just that by signing up for this
           free webinar!
         </p>
-        <form class="email-collector" action="#" method="post">
+        <form
+          id="Email-Collector"
+          class="email-collector"
+          action="#"
+          method="post"
+        >
           <input
             aria-label="first name"
+            name="firstName"
             type="text"
             placeholder="first name"
             required
           />
           <br />
-          <input aria-label="email" type="email" placeholder="email" required />
+          <input
+            aria-label="email"
+            name="emailAddress"
+            type="email"
+            placeholder="email"
+            required
+          />
           <br />
           <button class="btn btn-primary" type="submit">Register</button>
         </form>
@@ -44,5 +56,7 @@
         </p>
       </div>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
